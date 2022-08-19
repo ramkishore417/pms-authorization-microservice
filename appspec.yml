@@ -1,0 +1,11 @@
+version: 1.0
+Resources:
+  - TargetService:
+      Type: AWS::ECS::Service
+      Properties:
+        TaskDefinition: "arn:aws:ecs:ap-south-1:555918697305:task-definition/pensioner-detail-microservice:32"
+        LoadBalancerInfo:
+          ContainerName: "authorization-service"
+          ContainerPort: "8001"
+
+        PlatformVersion: "LATEST"
