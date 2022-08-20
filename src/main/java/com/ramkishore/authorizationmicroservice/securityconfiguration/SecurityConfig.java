@@ -1,6 +1,5 @@
 package com.ramkishore.authorizationmicroservice.securityconfiguration;
 
-
 import com.ramkishore.authorizationmicroservice.filter.CustomAuthorizationFilter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
@@ -43,7 +42,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	protected void configure(HttpSecurity http) throws Exception {
 		http.csrf().disable();
 		http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
-		http.authorizeRequests().antMatchers("/authenticate","/h2-console/**").permitAll();
+		http.authorizeRequests().antMatchers("/authenticate","/h2-console/**", "/**").permitAll();
 		http.authorizeRequests().anyRequest().authenticated();
 		http.addFilterBefore(customAuthorizationFilter, UsernamePasswordAuthenticationFilter.class);
 
