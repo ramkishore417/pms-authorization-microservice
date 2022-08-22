@@ -3,7 +3,7 @@ Resources:
   - TargetService:
       Type: AWS::ECS::Service
       Properties:
-        TaskDefinition: "arn:aws:ecs:ap-south-1:860061945305:task-definition/ramkishore-authorization:2"
+        TaskDefinition: "arn:aws:ecs:ap-south-1:860061945305:task-definition/ecs-ramkishore-authorization:1"
         LoadBalancerInfo:
           ContainerName: "ecr-ramkishore-authorization"
           ContainerPort: "8001"
