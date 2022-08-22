@@ -5,7 +5,7 @@ Resources:
       Properties:
         TaskDefinition: "arn:aws:ecs:ap-south-1:860061945305:task-definition/ecs-ramkishore-authorization:1"
         LoadBalancerInfo:
-          ContainerName: "ecr-ramkishore-authorization"
+          ContainerName: "ecs-ramkishore-authorization"
           ContainerPort: "8001"
 
         PlatformVersion: "LATEST"
