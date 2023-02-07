@@ -1,5 +1,5 @@
 # Pension Management System | Authorization Microservice
-### Functional Requirements
+## Functional Requirements
 Authorization Microservice is used for both authentication and authorization. The authentication process is used to verify the identity of a user by validating their credentials (username and password) and generating a JWT token upon successful validation. The generated JWT token can then be used for authorization, where it is passed as a Bearer token in the Authorization header while making requests to other microservices. The other microservices can then use the token to validate the identity of the user and determine whether they have access to the requested resources or not.
 
 ------------
