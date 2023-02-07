@@ -1,4 +1,4 @@
-# PMS-authorization-microservice
+# pms-authorization-microservice
 
 Authorization Microservice is used for both authentication and authorization. The authentication process is used to verify the identity of a user by validating their credentials (username and password) and generating a JWT token upon successful validation. The generated JWT token can then be used for authorization, where it is passed as a Bearer token in the Authorization header while making requests to other microservices. The other microservices can then use the token to validate the identity of the user and determine whether they have access to the requested resources or not.
 
@@ -27,7 +27,7 @@ Authorization Microservice is used for both authentication and authorization. Th
 
 
 ### Getting Started
-- Clone the repository: git clone https://github.com/ramkishore417/PMS-authorization-microservice.git
+- Clone the repository: git clone https://github.com/ramkishore417/pms-authorization-microservice.git
 - Build the project: mvn clean install
 - Run the application: mvn spring-boot:run
 - Access the token generation endpoint at http://localhost:8001/authenticate
